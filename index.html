@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor - Admin Système & DevOps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">💻 Victor</div>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#experience">Expérience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Victor - Admin Système & DevOps</h1>
+        <p>Spécialiste Infrastructure, Kubernetes & Cloud Native</p>
+        <div class="tags">
+            <span class="tag">🐳 Docker</span>
+            <span class="tag">☸️ Kubernetes</span>
+            <span class="tag">🔧 Istio</span>
+            <span class="tag">☁️ Cloud</span>
+            <span class="tag">🌐 Networking</span>
+            <span class="tag">🔄 CI/CD</span>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Passionné par l'infrastructure et l'automatisation, je me spécialise dans la conception et le déploiement d'architectures cloud-native hautement disponibles.
+                </p>
+                <p style="margin-top: 20px;">
+                    Mon expertise couvre l'orchestration de containers avec Kubernetes, la mise en place de service mesh avec Istio, et l'optimisation des flux réseau. Je privilégie les solutions scalables, résilientes et sécurisées.
+                </p>
+                <p style="margin-top: 20px;">
+                    <strong>🎯 Mon objectif :</strong> Construire des infrastructures robustes qui permettent aux équipes de se concentrer sur la création de valeur.
+                </p>
+            </div>
+            <div class="about-image">
+                🚀
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Compétences Techniques</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>☸️ Orchestration</h3>
+                <ul>
+                    <li>Kubernetes (K8s)</li>
+                    <li>Docker & Docker Compose</li>
+                    <li>Helm Charts</li>
+                    <li>Istio Service Mesh</li>
+                    <li>Ambient Mesh</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>☁️ Cloud & Infrastructure</h3>
+                <ul>
+                    <li>AWS / Azure / GCP</li>
+                    <li>Terraform / IaC</li>
+                    <li>Ansible</li>
+                    <li>Infrastructure as Code</li>
+                    <li>High Availability (HA)</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>🌐 Networking</h3>
+                <ul>
+                    <li>Load Balancing (nginx, HAProxy)</li>
+                    <li>Ingress Controllers</li>
+                    <li>Service Mesh (Istio)</li>
+                    <li>mTLS & Zero Trust</li>
+                    <li>VPN & Firewall</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>🔄 CI/CD & Automation</h3>
+                <ul>
+                    <li>GitLab CI / GitHub Actions</li>
+                    <li>Jenkins</li>
+                    <li>ArgoCD / FluxCD</li>
+                    <li>Automation Scripts</li>
+                    <li>GitOps</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>📊 Monitoring</h3>
+                <ul>
+                    <li>Prometheus</li>
+                    <li>Grafana</li>
+                    <li>ELK Stack</li>
+                    <li>Jaeger (tracing)</li>
+                    <li>Alerting & Logging</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>🔐 Sécurité</h3>
+                <ul>
+                    <li>mTLS & Certificates</li>
+                    <li>Secrets Management</li>
+                    <li>Network Policies</li>
+                    <li>RBAC & IAM</li>
+                    <li>Security Scanning</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projets & Réalisations</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🔧 Architecture Istio Ambient + Nginx</h3>
+                    <p>Service Mesh en production</p>
+                </div>
+                <div class="project-body">
+                    <p>Mise en place d'une architecture complète avec Istio en mode Ambient (sans sidecar), nginx-ingress en hostNetwork, et mTLS STRICT pour un cluster Kubernetes HA (2 masters, 2 workers).</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Kubernetes</span>
+                        <span class="tech-badge">Istio Ambient</span>
+                        <span class="tech-badge">nginx-ingress</span>
+                        <span class="tech-badge">mTLS</span>
+                        <span class="tech-badge">ztunnel</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>☸️ Cluster Kubernetes HA</h3>
+                    <p>Infrastructure hautement disponible</p>
+                </div>
+                <div class="project-body">
+                    <p>Déploiement d'un cluster Kubernetes multi-master en haute disponibilité avec load balancing, stockage distribué et monitoring complet.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">K8s Multi-Master</span>
+                        <span class="tech-badge">HAProxy</span>
+                        <span class="tech-badge">etcd</span>
+                        <span class="tech-badge">Prometheus</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>🚀 Pipeline CI/CD</h3>
+                    <p>Automatisation complète</p>
+                </div>
+                <div class="project-body">
+                    <p>Mise en place d'un pipeline CI/CD complet avec GitLab CI, déploiement automatisé sur Kubernetes, tests de sécurité et rollback automatique.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">GitLab CI</span>
+                        <span class="tech-badge">ArgoCD</span>
+                        <span class="tech-badge">Helm</span>
+                        <span class="tech-badge">Docker Registry</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2>Expérience Professionnelle</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Administrateur Système & DevOps</h3>
+                <div class="timeline-date">📅 2022 - Présent</div>
+                <p>
+                    • Conception et déploiement d'infrastructures cloud-native<br>
+                    • Migration vers Kubernetes et conteneurisation des applications<br>
+                    • Mise en place de service mesh Istio pour sécuriser les communications<br>
+                    • Automatisation des déploiements avec GitOps et CI/CD<br>
+                    • Monitoring et optimisation des performances
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Ingénieur Infrastructure</h3>
+                <div class="timeline-date">📅 2020 - 2022</div>
+                <p>
+                    • Gestion et maintenance d'infrastructures Linux (100+ serveurs)<br>
+                    • Automatisation avec Ansible et scripts Bash<br>
+                    • Mise en place de solutions de backup et disaster recovery<br>
+                    • Support technique niveau 3<br>
+                    • Documentation technique et formation des équipes
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Technicien Système</h3>
+                <div class="timeline-date">📅 2018 - 2020</div>
+                <p>
+                    • Administration de serveurs Linux et Windows<br>
+                    • Gestion du réseau et des équipements (switches, firewalls)<br>
+                    • Support utilisateurs et résolution d'incidents<br>
+                    • Participation aux projets d'infrastructure<br>
+                    • Veille technologique
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="icon">📧</div>
+                <h3>Email</h3>
+                <a href="mailto:victor@example.com">vicmercier@outlook.fr</a>
+            </div>
+            <div class="contact-card">
+                <div class="icon">💼</div>
+                <h3>LinkedIn</h3>
+                <a href="https://linkedin.com/in/victor" target="_blank">linkedin.com/in/victor</a>
+            </div>
+            <div class="contact-card">
+                <div class="icon">🐙</div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/victor" target="_blank">github.com/victor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Victor - Admin Système & DevOps. Tous droits réservés.</p>
+        <p style="margin-top: 10px; opacity: 0.7;">Construit avec passion 💜</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
