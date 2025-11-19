@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor - System Initialization</title>
+    <link rel="stylesheet" href="boot-intro.css">
+</head>
+<body>
+    <div class="boot-screen">
+        <div class="boot-header">
+            <h1>╔═══════════════════════════════════════╗</h1>
+            <h1>║   VICTOR SYSTEM ADMINISTRATOR v2.0   ║</h1>
+            <h1>╚═══════════════════════════════════════╝</h1>
+            <div class="version">Build: DevOps-K8s-2025 | Kernel: Linux 6.x</div>
+        </div>
+
+        <div id="boot-logs"></div>
+
+        <div class="progress-container" id="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="progress-text" id="progress-text">Initializing System: 0%</div>
+        </div>
+
+        <div class="final-message" id="final-message">
+            <div class="enter-prompt">
+                ► SYSTEM READY ◄
+            </div>
+            <button class="enter-button" id="enter-button">
+                <span class="button-text">PRESS ENTER TO CONTINUE</span>
+                <span class="button-blink">_</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="boot-intro.js"></script>
+</body>
+</html>
