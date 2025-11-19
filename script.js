@@ -45,6 +45,28 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
+// ===== THEME TOGGLE (DARK/LIGHT MODE) =====
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Charger le thème sauvegardé
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+    body.classList.add('light-mode');
+}
+
+// Toggle le thème au clic
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    
+    // Sauvegarder la préférence
+    if (body.classList.contains('light-mode')) {
+        localStorage.setItem('theme', 'light');
+    } else {
+        localStorage.setItem('theme', 'dark');
+    }
+});
+
 // ===== CONSOLE MESSAGE =====
-console.log('%c👋 Salut ! Tu inspectes le code ? J\'aime ça ! 😄', 'color: #667eea; font-size: 16px; font-weight: bold;');
-console.log('%c📧 N\'hésite pas à me contacter si tu veux discuter tech !', 'color: #764ba2; font-size: 14px;');
+console.log('%c👋 Salut ! Tu inspectes le code ? J\'aime ça ! 😄', 'color: #00ff00; font-size: 16px; font-weight: bold;');
+console.log('%c📧 N\'hésite pas à me contacter si tu veux discuter tech !', 'color: #0080ff; font-size: 14px;');
