@@ -225,7 +225,32 @@ h2::before {
 
 .about-image {
     text-align: center;
-    font-size: 150px;
+}
+
+/* ===== PROFILE IMAGE STYLES ===== */
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid var(--primary);
+    box-shadow: 0 10px 30px rgba(0, 255, 0, 0.2);
+    transition: all 0.3s;
+    animation: fadeInUp 1s 0.6s both;
+}
+
+.about-image img:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 15px 40px rgba(0, 255, 0, 0.3);
+    border-color: var(--secondary);
+}
+
+body.light-mode .about-image img {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .about-image img:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
 /* ===== SKILLS SECTION ===== */
@@ -530,6 +555,14 @@ footer p:first-child {
         grid-template-columns: 1fr;
     }
     
+    .about-image {
+        margin-top: 30px;
+    }
+    
+    .about-image img {
+        max-width: 300px;
+    }
+    
     .timeline {
         padding-left: 30px;
     }
@@ -550,5 +583,9 @@ footer p:first-child {
     
     h2 {
         font-size: 28px;
+    }
+    
+    .about-image img {
+        max-width: 250px;
     }
 }
